@@ -1,15 +1,15 @@
 import "./style.css";
-import printMe from "./print.js";
+import search from "./api.js";
 
 function component() {
   const element = document.createElement("div");
   const btn = document.createElement("button");
 
-  element.innerHTML = "Hello webpack";
-  element.classList.add("hello");
+  element.innerHTML = "Search a movie";
+  element.classList.add("title");
 
-  btn.innerHTML = "Click me and check the console!";
-  btn.onclick = printMe;
+  btn.innerHTML = "Search for 'Frozen'";
+  btn.onclick = search;
 
   element.appendChild(btn);
 
