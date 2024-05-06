@@ -1,3 +1,80 @@
-.title {
-  color: red;
+body {
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.netflix-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.netflix-heading h1 {
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  color: #fff;
+  margin: 0;
+}
+
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.movie {
+  text-align: center;
+  background-color: #222;
+  padding: 15px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.movie:hover {
+  transform: translateY(-5px);
+}
+
+.movie img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.movie h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #fff;
 }
