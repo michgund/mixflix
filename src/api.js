@@ -9,13 +9,11 @@ const client = algoliasearch(APP_ID, API_KEY);
 // Find sample index of movies
 const index = client.initIndex("movies_index");
 
-// Add function to search the index and console.log the results
-function search() {
-  index.search("frozen").then(({ hits }) =>
-    hits.forEach((element) => {
-      console.log(element.title);
-    })
-  );
+// Add function to search the index
+async function search(movie) {
+  return await index.search(movie).then((response) => {
+    return response.hits;
+  });
 }
 
 export default search;

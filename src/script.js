@@ -1,5 +1,5 @@
 import "./style.css";
-import search from "./api.js";
+import { handleSearch } from "./handlers";
 
 const btn = document.querySelector("button");
-btn.addEventListener("click", search);
+btn.addEventListener("click", handleSearch);
